@@ -1,0 +1,30 @@
+
+{% extends 'base.html' %}
+
+{% block content %}
+
+<br>
+<br>
+
+<main role="main">
+    <div class="jumbotron">
+        <div class="col-sm-8 mx-auto">
+            <h1>Web Scraping</h1>
+            <p>Data scraping, also known as web scraping, is the process of importing information from a website into a
+                spreadsheet or local file saved on your computer. It’s one of the most efficient ways to get data from
+                the web, and in some cases to channel that data to another website.</p>
+            <!--<p>For further exciting projects please do refer my <a href="https://github.com/Mandal-21" target="_blank">GitHub</a></p>-->
+            <p>Search any Quote you like:</p>
+            <form action="/result" method="POST">
+                <input type="text" name="quote" id='quote' placeholder="eg. happy">
+                <br>
+                <input type="submit" class="btn btn-dark" value="Search">
+            </form>
+
+        </div>
+    </div>
+</main>
+
+
+
+{% endblock %}

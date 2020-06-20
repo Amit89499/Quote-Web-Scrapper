@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+
+<table align="center" id="result_table">
+	<tr>
+		<th class="th2">Written By</th>
+		<th class="th1">Quotes</th>
+	</tr>
+
+	{% for quote in list_of_quotes %}
+
+	    <tr>
+	    	<td>{{ quote['Writer'] }}</td>
+	    	<td class="td1">{{ quote['Quote'] }}</td>
+	    </tr>
+
+	{% endfor %}
+</table>
+
+{% endblock %}
